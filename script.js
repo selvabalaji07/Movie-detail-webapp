@@ -82,7 +82,11 @@ let getMovie = async () => {
         <p>${data.Plot}</p>
         <h3>Cast:</h3>
         <p>${data.Actors}</p>
-        ${trailerUrl ? `<h3>Trailer:</h3><iframe width="550" height="315" src="${trailerUrl}" frameborder="0" allowfullscreen></iframe>` : '<h3>No trailer found</h3>'}
+         ${trailerUrl ? `
+      <h3>Trailer:</h3>
+      <div class="trailer-container">
+        <iframe src="${trailerUrl}" allowfullscreen></iframe>
+      </div>` : '<h3>No trailer found</h3>'}
      `;
     } else {
       let trailerUrl = await getMovieTrailer(movieName);
