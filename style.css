@@ -29,6 +29,14 @@ body {
   overflow-x: hidden;
   max-height: 90vh;
 }
+.container h1 {
+  color: #ff6347;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  margin-bottom: 1em;
+}
 
 .container::-webkit-scrollbar {
   width: 12px;
@@ -239,9 +247,7 @@ p {
   h3 {
     font-size: 1em;
   }
-
-  /* Adjust iframe for smaller screens */
   .trailer-container {
-    padding-bottom: 75%; /* Adjust as needed for smaller screens */
+    padding-bottom: 75%; 
   }
 }
